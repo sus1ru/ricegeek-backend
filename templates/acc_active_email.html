@@ -1,0 +1,5 @@
+{% autoescape off %}  
+Hi {{ user.username }},  
+Please confirm your registration with PlantFix, your otp is {{otp}}  
+{% comment %} http://{{ domain }}{% url 'activate' uidb64=uid token=token %}   {% endcomment %}
+{% endautoescape %}  
